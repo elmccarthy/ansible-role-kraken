@@ -1,0 +1,9 @@
+---
+
+- name: install Kraken via conda
+  conda_install:
+    name: "kraken"
+    version: "{{ version }}"
+    executable: "{{ conda_executable }}"
+    channel: "bioconda"
+    environment: "kraken_{{ env_name }}"
